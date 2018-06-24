@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="gameComponent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressedAction" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #242424;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.controller.GuiController">
+   <children>
+      <Label fx:id="scoreText" text="Score:" textFill="#ffefb2" translateX="10.0" translateY="10.0">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" prefHeight="17.0" prefWidth="62.0" text="174" textFill="#ffefb2" translateX="70.0" translateY="10.0">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lostLabel" prefHeight="55.0" prefWidth="224.0" text="GAME OVER!" textFill="#c90000" translateX="338.0" translateY="230.0">
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Century" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLabel" prefHeight="40.0" prefWidth="320.0" text="Press any key to begin new game." textFill="#ffefb2" translateX="290.0" translateY="285.0">
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
