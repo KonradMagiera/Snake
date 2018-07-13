@@ -60,26 +60,15 @@ public class SnakeThread extends Service<Void> {
 
                         Thread.sleep(100);
                     }
-
+                    
                 } catch (Exception e) {
-                    //if error TODO
+                    
                 }
                 
                 return null;
             }
         };
     }
-
-//    private void drawNewFood() {
-//        Random rand = new Random();
-//        int i = rand.nextInt(90);
-//        int j = rand.nextInt(60);
-//        food.setX(i);
-//        food.setY(j);
-//        //food = new Node(i, j);
-//        color = Color.GOLD;
-//        gui.draw(food.getX(), food.getY(), color);
-//    }
 
     private void drawSnake() {
         color = Color.GREEN;
@@ -96,6 +85,7 @@ public class SnakeThread extends Service<Void> {
         for(int i = 1; i < snake.length(); i++){
             if(snake.getSnakeNode(0).equals(snake.getSnakeNode(i))){
                 gui.setGameOver(true);
+                score = 0;
             }
         }
     }
